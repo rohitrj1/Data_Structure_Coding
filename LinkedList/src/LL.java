@@ -1,8 +1,8 @@
- class Node { 
+ class Node1 { 
 	int num;
-	Node next; 
+	Node1 next; 
 	
-	Node(int data)
+	Node1(int data)
 	{ 
 		this.num = data;
 		this.next = null;
@@ -13,22 +13,22 @@
 public class LL{
 	public static void main(String[] args) {
 		
-		Node head = null;
+		Node1 head = null;
 		
-		head  = new Node(1);
+		head  = new Node1(1);
 		
-		Node n = new Node(2);
+		Node1 n = new Node1(2);
 		
 		head.next = n;
 		
-		Node tail = n;
+		Node1 tail = n;
 		
-		n = new Node(3);
+		n = new Node1(3);
 		
 		tail.next = n;
 		tail = n;
 		
-		Node temp = head;
+		Node1 temp = head;
 		
 		while(temp != null) {
 			System.out.println(temp.num);
